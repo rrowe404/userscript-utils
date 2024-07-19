@@ -1,0 +1,17 @@
+{
+  "name": "userscript-utils",
+  "version": "0.0.1",
+  "description": "common functions shared between userscripts",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "rrowe404",
+  "license": "MIT",
+  "dependencies": {
+    "@types/jest": "^29.5.12",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.2.3",
+    "tsc": "^2.0.4"
+  }
+}

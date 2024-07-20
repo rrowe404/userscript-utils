@@ -4,6 +4,6 @@
  * @param padding The number of spaces
  * @returns The padded string
  */
-export default function leftPad(value: string, padding: number): string {
+export function leftPad(value: string, padding: number): string {
     return value.padStart(padding + value.length, ' ');
 }

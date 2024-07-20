@@ -1,7 +1,7 @@
-import leftPad from "../leftPad/leftPad";
+import { leftPad } from "../leftPad/leftPad";
 import { UserScriptMetadata } from "./UserScriptMetadata";
 
-export default function generateHeader(options: UserScriptMetadata): string {
+export function generateHeader(options: UserScriptMetadata): string {
     const entries = Object.entries(options);
     const longestLength = Math.max(...entries.map(([key]) => key.length));
     const padding = longestLength + 3;

@@ -1,4 +1,4 @@
-import leftPad from './leftPad';
+import { leftPad } from './leftPad';
 
 describe('leftPad', () => {
     it('should do the thing', () => {

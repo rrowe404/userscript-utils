@@ -4,6 +4,7 @@
   "description": "common functions shared between userscripts",
   "types": "./dist/index.d.ts",
   "scripts": {
+    "install": "npm run build",
     "build": "rm -rf ./dist && tsc",
     "test": "jest"
   },

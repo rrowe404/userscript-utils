@@ -5,7 +5,7 @@
   "types": "dist/index.d.ts",
   "scripts": {
     "install": "npm run build",
-    "build": "tsc --build --clean",
+    "build": "rm -rf ./dist && tsc",
     "test": "jest"
   },
   "author": "rrowe404",

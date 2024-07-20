@@ -2,7 +2,7 @@
   "name": "userscript-utils",
   "version": "0.0.1",
   "description": "common functions shared between userscripts",
-  "main": "index.js",
+  "main": "index.ts",
   "scripts": {
     "test": "jest"
   },

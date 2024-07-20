@@ -5,7 +5,7 @@
   "types": "dist/index.d.ts",
   "scripts": {
     "install": "npm run build",
-    "build": "tsc",
+    "build": "tsc --build --clean",
     "test": "jest"
   },
   "author": "rrowe404",
@@ -17,6 +17,6 @@
     "typescript": "^5.5.3"
   },
   "exports": {
-    "default": "./dist/index.js"
+    "node": "./dist/index.js",
   }
 }

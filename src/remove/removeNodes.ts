@@ -3,7 +3,7 @@
  * @param nodes result of calling document.getElement(.*) or document.querySelector(.*) methods
  * @returns success or failure (no nodes to remove)
  */
-export function removeNodes(nodes: Element | HTMLCollectionOf<Element> | NodeListOf<Element>): boolean {
+export function removeNodes(nodes: Element | Iterable<Element>): boolean {
     if (!nodes) {
         return false;
     }

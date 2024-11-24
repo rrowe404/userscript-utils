@@ -1,6 +1,6 @@
 {
   "name": "userscript-utils",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "common functions shared between userscripts",
   "types": "./dist/index.d.ts",
   "scripts": {

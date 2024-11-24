@@ -3,23 +3,20 @@ import { userscriptMetadataGenerator } from "userscript-metadata-generator";
 const glob = require("glob");
 
 class UserscriptPlugin {
-    public entry: Record<string, string> = {};
-    private metaData: Record<string, string> = {};
+  public entry: Record<string, string> = {};
+  private metaData: Record<string, string> = {};
 
   constructor() {
     const scripts = glob.sync("./src/**/*.user.ts");
     const metaFiles: string[] = glob.sync("./src/**/*.meta.ts");
 
-    this.entry = scripts.reduce(
-      (acc: Record<string, string>, path: string) => {
-        const entry = path
-          .replace(".user.ts", "")
-          .substring(path.lastIndexOf("/") + 1);
-        acc[entry] = path;
-        return acc;
-      },
-      {}
-    );
+    this.entry = scripts.reduce((acc: Record<string, string>, path: string) => {
+      const entry = path
+        .replace(".user.ts", "")
+        .substring(path.lastIndexOf("/") + 1);
+      acc[entry] = path;
+      return acc;
+    }, {});
 
     const entryKeys = Object.keys(this.entry);
 

@@ -5,7 +5,7 @@ import { createStylesheet } from "../css/createStylesheet";
  * @returns the content of the sheet that was created
  */
 export function hideSelectors(selectors: string[]): string {
-    const sheet = `${selectors.join(', ')} { display: none; }`;
+    const sheet = `${selectors.join(', ')} { display: none !important; }`;
     createStylesheet(sheet);
     return sheet;
 }
